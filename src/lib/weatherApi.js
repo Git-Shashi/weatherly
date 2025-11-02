@@ -160,7 +160,7 @@ export const searchCities = async (query) => {
 
     // Use geo API for city search
     console.log(`🔍 Searching for cities: ${query}`);
-    const response = await axios.get(`http://api.openweathermap.org/geo/1.0/direct`, {
+    const response = await axios.get(`https://api.openweathermap.org/geo/1.0/direct`, {
       params: {
         q: query,
         limit: 5,
